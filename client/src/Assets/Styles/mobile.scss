@@ -1,0 +1,258 @@
+@media only screen and (max-width: 980px) {
+  body .navbar-light .navbar-toggler-icon{
+    background-image : url("../Images/menu.png");
+  }
+
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+
+  .login_header .desktop_hide.sign_out_btn_header{
+    display: block;
+    position: absolute;
+    right: 26px;
+    top: 18px;
+    z-index: 9;
+  }
+
+  .login_header .navbar-light .navbar-toggler{
+    display: none;
+  }   
+}
+
+@media only screen and (max-width: 768px) {
+  .login_header a.brand {
+    margin-left: 45px;
+  }
+
+  .sidebar_parent{
+    left: 20px;
+  }
+  
+  .header_main.isTransparent {
+    background-color: #004061;
+  }
+
+  .navbar-nav {
+    margin-top: 25px;
+  }
+
+  .new-footer-main {
+    flex-direction: column;
+  }
+
+  .new-footer-main > div,
+  .new-footer-main > div + div + div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .new-footer-main>div:last-child {
+    margin-bottom: 0;
+  }
+
+  .c-details p {
+    margin-bottom: 0;
+  }
+
+  .footer_content {
+    margin-top: 30px;
+  }
+
+  .work_section .work_heading p {
+    padding-left: 80px;
+  }    
+
+  .sidebar_parent {
+    display: block;
+  }
+
+  .user_details {
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .main_container .App {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer.new-footer-cell.footer_with_sidebar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sidenav.sidebar_toggle {
+    left: -280px;
+  }
+
+  .main_container .App.toggle_sidebar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  p.back_sign_in {
+    right: 10px;
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main_banner_content h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .subscription_reminder {
+    flex-wrap: wrap;
+  }
+
+  .plan_button {
+    margin-top: 15px;
+  }
+
+  .subscription_reminder p {
+    font-size: 15px;
+  }
+
+  .main_banner_content p {
+    font-size: 15px;
+    margin: 30px 0 0;
+  }
+
+  .theme_round_button {
+    margin-top: 20px;
+    min-width: 100%;
+  }
+
+  .benefit_info .img-responsive {
+    max-height: 39px;
+    text-align: center;
+  }
+
+  .hero_banner {
+    padding: 150px 0 115px;
+  }
+
+  .benefit_info {
+    padding: 40px 0;
+  }
+
+  .benefit_info .col-lg-4 {
+    margin-bottom: 35px;
+  }
+
+  .benefit_info h3 {
+    margin: 20px auto 0px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    max-width: 220px;
+  }
+
+  .benefit_info p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 18px;
+  }
+
+  .help_section {
+    padding: 40px 0;
+  }
+
+  .help_section h2,
+  .work_section .section_heading > h2 {
+    font-size: 34px;
+  }
+
+  .help_section ul {
+    padding-left: 50px;
+    display: block;
+  }
+
+  .help_section ul li {
+    font-size: 16px;
+    padding: 0 10px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  .work_section .work_heading p span {
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .work_section .work_heading p{
+    font-size: 22px;
+  }
+  
+  .p-free-text h2 {
+    font-size: 30px;
+    line-height: 38px;
+    padding-left: 30px;
+  }
+
+  .peacefully-free-cell {
+    padding: 40px 0 0px;
+  }
+
+  .c-details.textCenter {
+    display: none;
+  }
+
+  .c-details a, .c-details p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .p-free-text p {
+    padding-left: 60px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .auth__card {
+    min-height: 578px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  body .button__element{
+    min-width: 110px;
+    min-height: 40px;
+  }
+
+  body .auth__card{
+    padding: 20px 20px 15px;
+  }
+
+  .login_footer {
+    font-size: 14px;
+  }
+
+  .sign_out_btn_header, 
+  .user_details {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .user_details {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 19px;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+
+  .auth__card {
+    box-shadow: none;
+  }
+}

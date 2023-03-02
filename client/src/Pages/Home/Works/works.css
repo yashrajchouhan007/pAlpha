@@ -1,0 +1,68 @@
+.work_section{
+    background-color: #F7FAFC;
+    padding: 60px 20px;
+}
+.work_section h1 {
+    color: #004061;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 0.01em;
+    margin-bottom: 25px;
+}
+.work_section .section_desc{
+    max-width: 736px;
+    margin: 0 auto 50px auto;
+}
+.vertical_tab {
+    cursor: pointer;
+}
+.vertical_tab_title {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgb(0 64 97 / 10%);
+    border-radius: 6px;
+    margin-bottom: 18px;
+    padding: 16px 29px 16px 20px;
+}
+section.work_section .vertical_tab_title div h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #004061;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+section.work_section .vertical_tab_title div p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #666666;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.vertical_tab.active .vertical_tab_title,
+.vertical_tab .vertical_tab_title:hover {
+    background: #004061;
+}
+.vertical_tab.active .vertical_tab_title div h1,
+.vertical_tab .vertical_tab_title:hover div h1,
+.vertical_tab.active .vertical_tab_title div p,
+.vertical_tab .vertical_tab_title:hover div p{
+    color: #FFFFFF;
+}
+
+.vertical_tab.active .vertical_tab_title div svg,
+.vertical_tab .vertical_tab_title:hover div svg{
+    stroke: #FFFFFF;
+}
+.tab_content_image {
+    margin-top: 70px;
+}
+.tab_content_image img {
+    max-width: 100%;
+}

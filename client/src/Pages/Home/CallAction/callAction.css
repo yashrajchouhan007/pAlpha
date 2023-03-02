@@ -1,0 +1,35 @@
+section.call_to_Action .container {
+    position: relative;
+}
+.call_to_Action {
+    position: relative;
+    padding: 70px 0px;
+}
+.call_to_Action:before {
+    content: "";
+    position: absolute;
+    background: #004061;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.84;
+}
+.call_to_Action h1 {
+    color: #fff;
+    font-size: 46px;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+}
+.call_to_Action p {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+}
+.callaction_btn_group{
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.callaction_btn_group li {
+    padding: 0px 15px;
+}

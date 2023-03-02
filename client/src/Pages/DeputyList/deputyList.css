@@ -1,0 +1,19 @@
+body .table-bordered>:not(caption)>* {
+    border-width: 2px;
+}
+body .table>:not(caption)>*>*{
+    vertical-align: middle;
+}
+.deputyRequest-tbl thead th {
+    padding: 10px 8px;
+}
+.deputyRequest-tbl .button__element_button {
+    min-height: 35px;
+    min-width: 100px;
+}
+.deputyRequest_parent {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+.deputyRequest_parent .deputyRequest-tbl {
+    margin-bottom: 0;
+}

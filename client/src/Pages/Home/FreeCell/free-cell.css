@@ -1,0 +1,23 @@
+.peacefully-free-cell {
+    padding: 50px 0;
+    background: #004061;
+}
+.p-free-text {
+    display: flex;
+    align-items: center;
+}
+.p-free-text h2 {
+    font-size: 45px;
+    line-height: 48px;
+    text-align: center;
+    padding-left: 30px;
+    max-width: 220px;
+}
+.p-free-text p {
+    padding-left: 60px;
+    font-size: 20px;
+}
+.p-free-text h2, .p-free-text p {
+    color: #fff;
+    display: inline-block;
+}

@@ -1,0 +1,32 @@
+.features {
+    position: relative;
+    padding: 60px 0px;
+}
+.featured_card img.card-img {
+    max-width: 100px;
+    margin: 0 auto 20px;
+}
+.featured_card.card {
+    padding: 35px 20px;
+    text-align: center;
+    border: 1px solid #CED7DE;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.10);
+    min-height: 370px;
+}
+.featured_card.card .card-body {
+    padding: 0;
+}
+.featured_card.card h3 {
+    color: #004061;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.featured_card.card p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+}

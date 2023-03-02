@@ -1,0 +1,15 @@
+.notification {
+    background-color: #6ecf96;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.notification.danger {
+    background-color: #eb5757;
+}
+.notification p {
+    margin-bottom: 0;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}

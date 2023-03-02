@@ -1,0 +1,50 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# To validate this bitbucket-pipelines.yml file, visit: Validator for bitbucket-pipelines.yml
+# If you need to configure the underlying database engine further, please refer to the official dockerhub image for details here: https://hub.docker.com/_/postgres
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:8.11.4
+
+pipelines:
+  branches:  # Pipelines that run automatically on a commit to a branch can also be triggered manually
+    develop:
+      - step:
+          # set HEROKU_API_KEY and HEROKU_APP_NAME environment variables
+          # set clone `depth: full' as described here: https://confluence.atlassian.com/x/Y9-5Mw
+          name: Deploy to Heroku
+          caches:
+              - node
+          script: # Modify the commands below to build your repository.
+              - npm install
+              # - npm test
+              # - npm run client:build
+              - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git HEAD:master --force
+          services:
+              - postgres
+    master:
+      - step:
+          # set HEROKU_API_KEY and HEROKU_APP_NAME environment variables
+          # set clone `depth: full' as described here: https://confluence.atlassian.com/x/Y9-5Mw
+          name: Deploy to Heroku
+          caches:
+              - node
+          script: # Modify the commands below to build your repository.
+              - npm install
+              # - npm test
+
+              - git fetch --unshallow origin
+              - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_LIVE_NAME.git HEAD:master --force
+          services:
+              - postgres
+
+# For documentation
+definitions:
+  services:
+    postgres:
+      image: postgres
+      environment:
+        POSTGRES_DB: 'pipelines'
+        POSTGRES_USER: 'test_user'
+        POSTGRES_PASSWORD: 'test_user_password'

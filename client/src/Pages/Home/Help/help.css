@@ -1,0 +1,25 @@
+.help_section {
+    background: #004061;
+    padding: 40px 0 130px;
+}
+.help_section h2 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 48px;
+}
+.help_section ul {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 110px;
+}
+.help_section ul li {
+    color: #fff;
+    font-size: 18px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+}
+.help_section ul li+li+li {
+    margin-top: 20px;
+}

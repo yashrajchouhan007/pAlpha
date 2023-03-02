@@ -1,0 +1,103 @@
+.processe_section{
+    padding: 60px 20px;
+}
+.processe_section h1 {
+    color: #004061;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 0.01em;
+    margin-bottom: 25px;
+}
+.section_desc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #666666;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.horizontal_tab_data {
+    margin-top: 60px;
+}
+.processe_tile {
+    background: #FFFFFF;
+    border: 1px solid #CED7DE;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 35px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.processe_parent {
+    min-height: 157px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.processe_label p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #004061;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-family: 'EB Garamond', serif;
+}
+.processe_description p {
+    color: #004061;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    line-height: 23px;
+    font-weight: 400;
+    margin: 15px 0 0 0;
+}
+.horizontal_tab {
+    justify-content: center;
+    border: none;
+}
+.horizontal_tab li.nav-item button {
+    border: 1px solid #004061;
+    border-radius: 4px;
+    margin: 0 15px;
+    box-shadow: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #004061;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 250px;
+    padding: 12px;
+}
+.horizontal_tab li.nav-item button.active,
+.horizontal_tab li.nav-item button:hover,
+.horizontal_tab li.nav-item button:active{
+    background-color: #004061;
+    color: #FFFFFF;
+}
+.processe_image {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid #e9eef9;
+    height: 120px;
+    width: 120px;
+}
+.processe_image img {
+    max-width: 100px;
+    max-height: 100px;
+}

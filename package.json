@@ -1,0 +1,71 @@
+{
+  "name": "peacefully-inc",
+  "version": "1.0.1",
+  "private": true,
+  "author": {
+    "name": "peacefully, Inc.",
+    "email": "hello@peacefully.io",
+    "url": "https://www.peacefully.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "dev": "cd server-v2 && node ace serve --watch",
+    "build": "node ace build --production",
+    "start": "npm run client",
+    "client:build": "cd client && npm install && CI=false npm run build",
+    "server": "node server/build/server.js",
+    "client": "cd client && npm run start",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "server:build": "cd server && npm run build",
+    "lint": "eslint . --ext=.ts"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:adonis/typescriptApp"
+    ]
+  },
+  "eslintIgnore": [
+    "build"
+  ],
+  "devDependencies": {
+    "@adonisjs/assembler": "^5.7.0",
+    "@japa/preset-adonis": "^1.0.16",
+    "@japa/runner": "^2.0.8",
+    "adonis-preset-ts": "^2.1.0",
+    "eslint": "^8.16.0",
+    "eslint-plugin-adonis": "^2.1.0",
+    "pino-pretty": "^7.6.1",
+    "typescript": "^4.6.4",
+    "youch": "^3.2.0",
+    "youch-terminal": "^2.1.4"
+  },
+  "dependencies": {
+    "@adonisjs/core": "^5.8.2",
+    "@adonisjs/lucid": "^18.0.0",
+    "@adonisjs/mail": "^8.1.2",
+    "@adonisjs/repl": "^3.1.11",
+    "@adonisjs/view": "^3.1.0",
+    "@poppinss/utils": "^4.0.4",
+    "axios": "^0.27.2",
+    "fs": "0.0.1-security",
+    "luxon": "^2.4.0",
+    "pg": "^8.7.3",
+    "promises": "^0.2.5",
+    "proxy-addr": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "socket.io": "^4.5.4",
+    "source-map-support": "^0.5.21",
+    "stripe": "^10.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/peacefully/alpha/"
+  },
+  "urls": {
+    "alpha": "https://peacefully-alpha.herokuapp.com/",
+    "production": "https://peacefully.com"
+  }
+}
